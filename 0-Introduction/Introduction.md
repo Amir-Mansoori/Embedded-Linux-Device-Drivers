@@ -45,7 +45,8 @@ Device Driver: rtc	4
 VFS gets the device number and compares it with its driver registration list to find and match the connection.
 Character Device Add (CDEV_Add): registration of device driver number in VFS.
 
-Connection establishment between device file access and the driver:
+## Connection establishment between device file access and the driver:
+The following steps must be done to establish a connection between device file access and the driver:
 -	Create device number
 -	Create device files
 -	Make a device driver registration with the VFS (CDEV_ADD)
